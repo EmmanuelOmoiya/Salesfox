@@ -171,6 +171,10 @@
   border-radius: 1rem;
 }
 
+.ytr{
+  display: flex;
+}
+
 .prode{
   width: 60%;
   margin-left: auto;
@@ -220,4 +224,106 @@
   font-size: .9rem;
   margin-bottom: .8rem;
   text-align: center;
+}
+
+.hamburger{
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.bar{
+  width: 100%;
+  height: 3px;
+  background-color: #06AB2A;
+}
+
+@media screen and (max-width: 480px) {
+  .hero{
+    height: 60vh;
+  }
+
+  .get{
+    width: 5.7rem;
+    padding: 5px;
+    font-size: .9rem;
+    height: 2.3rem;
+  }
+
+  .in{
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+
+  .links,
+  .njh{
+    display: none;
+  }
+
+  .header{
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .main{
+    display: block;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .intro{
+    width: 18rem;
+    margin-left: 1rem;
+  }
+
+  .right{
+    padding: 0;
+  }
+
+  .box{
+    margin: 1rem;
+    flex: 50% 1;
+  }
+
+  .how{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .indicator{
+    margin-left: .7rem;
+  }
+
+  .fetp,
+  .detf{
+    text-align: center;
+    align-items: center;
+  }
+
+
+  .fetp{
+    font-size: 1.2rem;
+  }
+
+  .ytr{
+    display: block;
+  }
+
+  .features{
+    padding: 1rem;
+  }
+
+  .hhea{
+    font-size: 1.4rem;
+  }
+
+  .det{
+    margin-bottom: 3.7rem;
+    font-weight: 400;
+    margin-right: 0;
+  }
+
+  .fotg{
+    display: block;
+  }
+
+  .nre{
+    width: 100%;
+  }
 }

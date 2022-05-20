@@ -5,6 +5,7 @@ const How = () => {
     return (  
         <div className="how" id='#how'>
              <h2 className="hhea">How it works</h2>
+             <div className="ytr">
              <div className="contre">
                 <img src={indicator} alt="" className='indicator'/>
                 <ul className="detcon">
@@ -24,7 +25,8 @@ const How = () => {
                          Get payment done through Credo embedded widget 
                      </li>
                 </ul>
-                <img src={sl} alt="" className="nre" />
+             </div>
+             <img src={sl} alt="" className="nre" />
              </div>
         </div>
     );
