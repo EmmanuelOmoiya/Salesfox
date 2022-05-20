@@ -1,5 +1,3 @@
-import abr from '../assets/torus.svg';
-
 const Prompt = () => {
     return (  
         <div className="prompt">
