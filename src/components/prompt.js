@@ -5,6 +5,7 @@ const Prompt = () => {
                 <p className="prode">
                     Get the Conversation, Conversion & Payments all in <span className="green">1</span> bot
                 </p>
+                <br />
                 <button className="get dtt">Get Started</button>
             </div>
         </div>

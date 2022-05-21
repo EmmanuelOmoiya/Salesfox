@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 *{
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Poppins', 'Source Sans Pro',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .header{
@@ -98,6 +100,10 @@
   margin: 1.7rem;
   border-radius: 10px;
   background-color: #fff;
+  text-align: center;
+  align-items: center;
+  color: #000;
+  padding: 2.5rem 1rem 1.5rem 1rem;
 }
 
 .box:hover{
@@ -229,21 +235,105 @@
 .hamburger{
   width: 1.8rem;
   height: 1.8rem;
+  display: none;
+  cursor: pointer;
 }
 
 .bar{
+  display: block;
+  margin-bottom: .4rem;
   width: 100%;
   height: 3px;
-  background-color: #06AB2A;
+  background-color: #0748D3;
+  border-radius: 7px;
+}
+
+.modal{
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: rgba(105, 90, 90, 0.753);
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+}
+
+.msg{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  margin-top: 30vh;
+  width: 50%;
+  height: 15rem;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+.or::before,
+.or::after{
+  content: ' ------- ';
+}
+
+.twit{
+  border: none;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  font-family: inherit;
+  background-color: #0748D3;
+  color: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.insta{
+  background: linear-gradient(to bottom left, #4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
+  color: #fff;
+  border: none;
+  width: 11rem;
+  height: 3.3rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  border-radius: 7px;
+  cursor: pointer;
+
+}
+
+.inactive{
+  display: none;
 }
 
 @media screen and (max-width: 480px) {
+
+  .msg{
+    width: 75%;
+    padding: 2rem;
+  }
+
+  .insta{
+    font-size: 1rem;
+    width: 9rem;
+    height: 2.3rem;
+  }
+
+  .twit{
+    width: 8rem;
+    font-size: 1rem;
+    height: 2rem;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
   .hero{
     height: 60vh;
   }
 
   .get{
-    width: 5.7rem;
+    width: 5.9rem;
     padding: 5px;
     font-size: .9rem;
     height: 2.3rem;
@@ -270,6 +360,15 @@
   .intro{
     width: 18rem;
     margin-left: 1rem;
+  }
+
+  .sp ul{
+    display: block;
+    text-align: left;
+  }
+
+  .lm{
+    text-align: left;
   }
 
   .right{
@@ -316,14 +415,70 @@
   .det{
     margin-bottom: 3.7rem;
     font-weight: 400;
+    width: 97%;
     margin-right: 0;
+  }
+
+  .pro{
+    padding: 1.5rem;
   }
 
   .fotg{
     display: block;
   }
 
+  .prode{
+    width: 90%;
+    font-size: 1rem;
+  }
+
   .nre{
     width: 100%;
+  }
+
+  .active{
+    display: block;
+    width: 100vw;
+    height:100vh;
+    background-color: #ddd;
+    position: absolute;
+    margin-top: 42rem;
+    margin-left: -1.5rem;
+    padding: 2rem;
+    transition: 0.3s ease-in-out;
+  }
+
+  .link-li{
+    margin-bottom: 3rem;
+  }
+
+  .link-li a{
+    font-size: 1.3rem;
+  }
+
+  .hamburger.drop .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger.drop .bar:nth-child(1){
+    transform: translateY(.9rem) rotate(45deg);
+    transition: .5s;
+  }
+
+  .hamburger.drop .bar:nth-child(3){
+    transform: translateY(-.3rem) rotate(-45deg);
+    transition: .5s ease-in-out;
+  }
+
+  @keyframes move {
+    0%{
+      margin-right: 100%;
+      transition: ease-in-out .6s ;
+      transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    100%{
+      margin-right: 0%;
+    }
   }
 }

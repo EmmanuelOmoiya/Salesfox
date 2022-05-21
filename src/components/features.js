@@ -1,3 +1,8 @@
+import first from '../assets/glass.svg';
+import second from '../assets/autom.svg';
+import third from '../assets/circle.svg';
+import fourth from '../assets/coin.svg';
+
 const Features = () => {
     return (  
         <div className="features" id="#features">
@@ -8,16 +13,20 @@ const Features = () => {
                 </div>
                 <div className="right">
                     <div className="box">
-                        <p>hr</p>
+                        <img src={first} alt="" className="bimg" />
+                        <p className="bdet">Simple Keyword search - Hashtags</p>
                     </div>
                     <div className="box">
-
+                        <img src={second} alt="" className="bimg" />
+                        <p className="bdet">Automated Algorithm</p>
                     </div>
                     <div className="box">
-
+                        <img src={third} alt="" className="bimg" />
+                        <p className="bdet">Salesfox bot for Twitter and Instagram</p>
                     </div>
                     <div className="box">
-
+                        <img src={fourth} alt="" className="bimg" />
+                        <p className="bdet">Payments integrated services using Credo payments</p>
                     </div>
                 </div>
             </div>
