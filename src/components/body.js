@@ -6,10 +6,6 @@ import Modal from "./modal";
 import Prompt from "./prompt";
 
 const Body = () => {
-    const [rep, setRep] = useState(false);
-    const change = () =>{
-        setRep(!rep)
-    }
     return ( 
         <>
         {/*<Modal/>*/}
